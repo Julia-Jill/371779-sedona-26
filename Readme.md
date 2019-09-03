@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Пащенко](https://up.htmlacademy.ru/htmlcss/26/user/371779).
-* Наставник: `Неизвестно`.
+* Наставник: [Доминика Норт](https://htmlacademy.ru/profile/ponzona).
 
 ---
 
