@@ -24,15 +24,58 @@
       <h1 class="visually-hidden">Поиск отелей</h1><!--Скрыть-->
       <section><!--Красная секция-->
         <h2 class="visually-hidden">Критерии поиска</h2><!--Скрыть-->
-        <form>
-          <p>Инфраструктура:</p>
-          <!--Тут будут формы-->
+        <form class="" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="">
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked/>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking"/>
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi"/>
+                <label for="wi-fi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
 
-          <p>Тип жилья:</p>
-          <!--Тут будут формы-->
+          <fieldset class="">
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="hotel" checked/>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel" checked/>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartment" id="apartment" checked/>
+                <label for="apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
 
-          <p>Стоимость в сутки (р):</p>
-          <!--Тут будут формы-->
+          <fieldset class="">
+            <legend>Стоимость в сутки (р):</legend>
+              <div class="">
+                <label for="first-value">от</label>
+                <input type="text" name="first-value" id="first-value" placeholder="0"/>
+                <label for="last-value">до</label>
+                <input type="text" name="last-value" id="last-value" placeholder="3000"/>
+              </div>
+              <div class="range-value"><!--Через CSS-->
+                <div class="range-value-min"></div>
+                <div class="range-value-scale"></div>
+                <div class="range-value-max"></div>
+              </div>
+          </fieldset>
+
           <button type="submit">Показать</button>
         </form>
 
@@ -40,13 +83,14 @@
           <h2>Найдено: 3</h2>
           <p>Сортировка:</p>
           <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
           </ul>
-
-          <span></span><!--Стрелка вверх-->
-          <span></span><!--Стрелка вниз-->
+          <div>
+            <a href="#" aria-label="Сортировать по возрастанию" title="По возрастанию">11</a><!--Стрелка вверх-->
+            <a href="#" aria-label="Сортировать по убыванию" title="По убыванию"></a><!--Стрелка вниз-->
+          </div>
         </div>
 
       </section>
