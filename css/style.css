@@ -143,17 +143,11 @@ a {
 .reasons-items {
   display: flex;
   flex-wrap: wrap;
-
-  outline: 1px solid #666;
 }
 
 .reason-item-long {
   display: flex;
   height: 256px;
-
-
-  outline: 1px solid #666;
-
 }
 
 .reason-item-blue {
@@ -197,6 +191,130 @@ a {
   width: 400px;
 }
 
+/* ---- */
+
+.reasons-items-mini {
+  display: flex;
+}
+
+.reason-item-point {
+  position: relative;
+  background-color: #ffffff;
+  height: 330px;
+  width: 400px;
+}
+
+.housing::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 162px;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 76px;
+  height: 72px;
+}
+
+.food::before {
+  content: "";
+  position: absolute;
+  top: 61px;
+  right: 163px;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 74px;
+  height: 70px;
+}
+
+.souvenirs::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  right: 168px;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 64px;
+  height: 76px;
+}
+
+.reasons-mini-title {
+  margin: 0 auto;
+  margin-top: 161px;
+  margin-bottom: 20px;
+  width: 160px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.reasons-mini-text {
+  margin: 24px auto;
+  width: 305px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+
+/* Кнопка поиска*/
+
+.search-intro-text {
+  height: 291px;
+}
+
+.search-title {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.search-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.search-intro-btn {
+  margin-top: 33px;
+  background-color: #766357;
+  color: #ffffff;
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Форма поиска*/
+
+.form-search {
+  position: absolute;
+  left: 391px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  width: 568px;
+  height: 395px;
+  z-index: 2;
+}
+
+.form-search-container {
+  position: relative;
+  margin: 55px auto;
+  width: 458px;
+  height: 285px;
+
+  outline: 1px solid #666;
+}
 
 
 
@@ -223,8 +341,17 @@ a {
 
 
 
+/* Карта */
+.map iframe {
+  border: 0;
+  z-index: 0;
+}
 
 
+/* Подвал */
+
+
+/* Формы поиска отелей */
 
 
 
