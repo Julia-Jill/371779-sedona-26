@@ -26,21 +26,45 @@ a {
 }
 
 
-/* Навигация */
-
-.main-navigation {
+/* Центровщик */
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
   background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
-.main-navigation-items {
 
+/* Декорация ссылок */
+.list-decoration {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* Логотип */
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+
+/* Навигация */
+.main-navigation {
+  background-color: #ffffff;
 }
 
 .main-navigation-items a {
   color: #000000;
 }
 
-.main-navigation-items a:hover {
+.main-navigation-items a:hover,
+.main-navigation-items a:focus {
   color: #81b3d2;
 }
 
@@ -49,19 +73,191 @@ a {
   opacity: 0.3;
 }
 
-
-/* Основное содержимое */
-
-.list-decoration {
-  list-style: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.container {
+.main-navigation-items {
+  display: flex;
+  align-items: center;
   margin: 0 auto;
-  width: 1200px;
-  text-align: center;
-  background-color: #ffffff;
+  width: 1056px;
+  height: 56px;
 }
+
+.main-navigation-info {
+  text-align: left;
+  width: 240px;
+}
+
+.main-navigation-foto {
+  text-align: left;
+  padding-left: 3px;
+  width: 288px;
+}
+
+.main-navigation-map {
+  text-align: right;
+  padding-right: 4px;
+  width: 288px;
+}
+
+.main-navigation-hotels {
+  text-align: right;
+  width: 240px;
+}
+
+
+/* Основное изображение, текст */
+.intro {
+  background-image:
+    url("../img/intro-mask.svg"),
+    url("../img/background-photo.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 452px, center -83px;
+  height: 509px;
+}
+
+.welcome-image {
+  margin-top: 76px;
+}
+
+.intro-text {
+  margin: 0 auto;
+  width: 493px;
+  height: 215px;
+}
+
+.intro-text p:first-child {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 25px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.intro-text p:last-child {
+  margin: 0;
+  font-weight: 400;
+  color: #333333;
+}
+
+
+/* Блок "причины" */
+.reasons-items {
+  display: flex;
+  flex-wrap: wrap;
+
+  outline: 1px solid #666;
+}
+
+.reason-item-long {
+  display: flex;
+  height: 256px;
+
+
+  outline: 1px solid #666;
+
+}
+
+.reason-item-blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+  width: 400px;
+}
+
+/* ---- */
+
+.reasons-items-title {
+  margin: 0 auto;
+  margin-top: 47px;
+  margin-bottom: 20px;
+  width: 160px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.reasons-items-text {
+  margin: 20px auto;
+  width: 305px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.reason-item-long img {
+  width: 800px;
+  height: 256px;
+  object-fit: cover;
+  object-position: 0 -78px;
+}
+
+/* ---- */
+
+.reason-item-small {
+  background-color: #eeeeee;
+  height: 256px;
+  width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ {  outline: 1px solid #666;  }
+
+} */

@@ -11,40 +11,45 @@
     <div class="container">
     <header>
       <nav class="main-navigation">
-        <a>
+        <ul class="main-navigation-items list-decoration">
+          <li class="main-navigation-info"><a href="#">Информация</a></li>
+          <li class="main-navigation-foto"><a href="#">Фото и видео</a></li>
+          <li class="main-navigation-map"><a href="#">Карта штата</a></li>
+          <li class="main-navigation-hotels"><a href="inner.html">Гостиницы</a></li>
+        </ul>
+        <a class="main-header-logo">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Седона"/>
         </a>
-        <ul class="main-navigation-items list-decoration">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="inner.html">Гостиницы</a></li>
-        </ul>
       </nav>
     </header>
 
 
     <main><!--Основное-->
-      <div>
+      <div class="intro">
          <h1 class="visually-hidden">Седона</h1><!--Скрыть-->
          <p class="visually-hidden">Welcome &mdash; to the gorgeous &mdash; Sedona</p><!--Скрыть-->
          <p class="visually-hidden">&ldquo;Because the Grand Canyon sucks!&rdquo;</p><!--Скрыть-->
-         <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону"/>
+         <img class="welcome-image" src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону"/>
       </div>
 
       <section>
         <h2 class="visually-hidden">Причины</h2><!--Скрыть-->
-        <div>
+        <div class="intro-text">
          <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
  			   <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
 
-        <ul class="list-decoration">
+        <ul class="list-decoration reasons-items">
           <li>
-            <h3>Настоящий городок</h3>
-            <span>&mdash; №1 &mdash;</span>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/real-city.jpg" width="800" height="401" alt="Наша Седона"/>
+            <div class="reason-item-long">
+              <div class="reason-item-blue">
+                <h3 class="reasons-items-title">Настоящий городок</h3>
+                <span class="reasons-items-text">&mdash; №1 &mdash;</span>
+                <p class="reasons-items-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img src="img/real-city.jpg" width="800" height="401" alt="Наша Седона"/>
+            </div>
+
             <ul class="list-decoration">
               <li>
                 <h3>Жильё</h3>
@@ -62,28 +67,32 @@
           </li>
 
           <li>
-            <h3>Там есть Мост дьявола</h3>
-            <span>&mdash; №2 &mdash;</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="img/devils-bridge.jpg" width="800" height="400" alt="Мост дьявола"/>
+            <div class="reason-item-long">
+              <img src="img/devils-bridge.jpg" width="800" height="400" alt="Мост дьявола"/>
+              <div class="reason-item-blue">
+                <h3 class="reasons-items-title">Там есть Мост&nbsp;дьявола</h3>
+                <span class="reasons-items-text">&mdash; №2 &mdash;</span>
+                <p class="reasons-items-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
+            </div>
           </li>
 
-          <li>
-            <h3>Небольшая площадь</h3>
-            <span>&mdash; №3 &mdash;</span>
-            <p>Все достопримечательности находятся очень близко</p>
+          <li class="reason-item-small">
+            <h3 class="reasons-items-title">Небольшая площадь</h3>
+            <span class="reasons-items-text">&mdash; №3 &mdash;</span>
+            <p class="reasons-items-text">Все достопримечательности находятся&nbsp;очень близко</p>
           </li>
 
-          <li>
-            <h3>Красивая дорога</h3>
-            <span>&mdash; №4 &mdash;</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="reason-item-small">
+            <h3 class="reasons-items-title">Красивая дорога</h3>
+            <span class="reasons-items-text">&mdash; №4 &mdash;</span>
+            <p class="reasons-items-text">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </li>
 
-          <li>
-            <h3>Мало туристов</h3>
-            <span>&mdash; №5 &mdash;</span>
-            <p>Большинство едет в гранд каньон и толпится там</p>
+          <li class="reason-item-small">
+            <h3 class="reasons-items-title">Мало туристов</h3>
+            <span class="reasons-items-text">&mdash; №5 &mdash;</span>
+            <p class="reasons-items-text">Большинство едет в гранд каньон и&nbsp;толпится там</p>
           </li>
         </ul>
 			</section>
