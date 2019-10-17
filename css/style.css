@@ -314,8 +314,6 @@ a {
   margin: 55px auto;
   width: 458px;
   height: 285px;
-
-  outline: 1px solid #666;
 }
 
 .fields-wrapper {
@@ -422,22 +420,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Карта */
 .map iframe {
   border: 0;
@@ -445,13 +427,144 @@ a {
 }
 
 
-/* Подвал */
-
-
-
-
 /* 2 страница */
 /* Формы поиска отелей */
+.search-section {
+  height: 217px;
+  background-color: #81b3d2;
+  background-image: url(../img/filter-background.jpg); /* положение БГ!!!!!!!!!!!!!!!!!! background-position: 0 -55px; */
+
+  text-align: left;
+
+  outline: 1px solid #666;
+}
+
+
+.search-form {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+
+  outline: 1px solid #666;
+}
+
+
+.search-fieldset {
+  border: none;
+
+
+  outline: 1px solid red;
+}
+
+
+.search-fieldset legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .search-fieldset input[type=checkbox] {
+  display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Подвал */
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 120px;
+  background-color: #ffffff;
+  opacity: 0.9;
+
+
+
+
+
+
+  outline: 1px solid #666;
+}
+
+
+
+
 
 
 

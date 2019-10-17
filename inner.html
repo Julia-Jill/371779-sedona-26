@@ -26,12 +26,12 @@
 
     <main>
       <h1 class="visually-hidden">Поиск отелей</h1><!--Скрыть-->
-      <section><!--Красная секция-->
+      <section class="search-section">
         <h2 class="visually-hidden">Критерии поиска</h2><!--Скрыть-->
-        <form class="" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="search-fieldset">
             <legend>Инфраструктура:</legend>
-            <ul>
+            <ul class="list-decoration">
               <li>
                 <input type="checkbox" name="pool" id="pool" checked/>
                 <label for="pool">Бассейн</label>
@@ -47,9 +47,9 @@
             </ul>
           </fieldset>
 
-          <fieldset class="">
+          <fieldset class="search-fieldset">
             <legend>Тип жилья:</legend>
-            <ul>
+            <ul class="list-decoration">
               <li>
                 <input type="checkbox" name="hotel" id="hotel" checked/>
                 <label for="hotel">Гостиница</label>
@@ -65,7 +65,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="">
+          <fieldset class="search-fieldset">
             <legend>Стоимость в сутки (р):</legend>
               <div class="">
                 <label for="first-value">от</label>
@@ -78,16 +78,18 @@
                 <div class="range-value-scale"></div>
                 <div class="range-value-max"></div>
               </div>
+              <button type="submit">Показать</button>
           </fieldset>
 
-          <button type="submit">Показать</button>
         </form>
+      </section>
 
+      <section><!--Отели-->
         <div>
           <h2 class="visually-hidden">Сортировка</h2><!--Скрыть-->
           <p>Найдено: 3</p>
           <p>Сортировка:</p>
-          <ul>
+          <ul class="list-decoration">
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
@@ -98,11 +100,8 @@
           </div>
         </div>
 
-      </section>
-
-      <section><!--Отели-->
         <h2 class="visually-hidden">Список отелей</h2><!--Скрыть-->
-        <ul>
+        <ul class="list-decoration">
           <li>
             <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa"/>
             <div>
@@ -161,7 +160,7 @@
     </main>
 
 
-    <footer>
+    <footer class="main-footer">
       <p>#VisitSedona</p>
 			<ul class="list-decoration">
 				 	<li>
