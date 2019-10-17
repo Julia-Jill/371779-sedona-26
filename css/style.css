@@ -260,7 +260,6 @@ a {
 
 
 /* Кнопка поиска*/
-
 .search-intro-text {
   height: 291px;
 }
@@ -296,16 +295,19 @@ a {
 
 
 /* Форма поиска*/
-
 .form-search {
   position: absolute;
-  left: 391px;
+  left: 50%;
+  transform: translate(-50%, 0);
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   width: 568px;
   height: 395px;
   z-index: 2;
 }
+
+/* ---- */
 
 .form-search-container {
   position: relative;
@@ -316,13 +318,108 @@ a {
   outline: 1px solid #666;
 }
 
+.fields-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 173px;
+}
+
+.fields-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  margin: 0;
+}
+
+.fields-container .input-calendar {
+  box-sizing: border-box;
+  padding-left: 13px;
+  width: 346px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
 
+.fields-container .calendar-btn {
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---- */
+
+.input-adults-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.input-adults-wrapper .input-adults,
+.input-adults-wrapper .input-children {
+  margin: auto;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
 
 
+.fields-container .minus-btn,
+.fields-container .plus-btn {
+  margin: 0;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  color: #a9a9a9;
+  border: none;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
+.input-adults-wrapper:first-child .minus-btn {
+  margin-left: 40px;
+}
 
+.input-adults-wrapper:last-child .minus-btn {
+  margin-left: 26px;
+}
 
+/* ---- */
+
+.submit-btn {
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 54px;
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  border: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
 
 
@@ -351,6 +448,9 @@ a {
 /* Подвал */
 
 
+
+
+/* 2 страница */
 /* Формы поиска отелей */
 
 
@@ -386,5 +486,4 @@ a {
 
 /*
  {  outline: 1px solid #666;  }
-
-} */
+*/
