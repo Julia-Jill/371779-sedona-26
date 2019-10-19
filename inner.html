@@ -65,21 +65,22 @@
             </ul>
           </fieldset>
 
-          <fieldset>
-            <legend>Стоимость в сутки (р):</legend>
-              <div class="">
-                <label for="first-value">от</label>
-                <input type="text" name="first-value" id="first-value" placeholder="0"/>
-                <label for="last-value">до</label>
-                <input type="text" name="last-value" id="last-value" placeholder="3000"/>
+          <div class="filter-range">
+              <legend>Стоимость в сутки (р):</legend>
+              <div class="price-controls">
+                <label class="min-price" for="first-value">от <input type="text" name="first-value" id="first-value" value="0"/></label>
+                <label class="max-price" for="last-value">до <input type="text" name="last-value" id="last-value" value="3000"/></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
-              <div class="range-value"><!--Через CSS-->
-                <div class="range-value-min"></div>
-                <div class="range-value-scale"></div>
-                <div class="range-value-max"></div>
-              </div>
-              <button type="submit">Показать</button>
-          </fieldset>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="transparent-btn" type="submit">Показать</button>
+          </div>
+
         </form>
       </section>
 

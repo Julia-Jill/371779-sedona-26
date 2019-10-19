@@ -455,7 +455,8 @@ a {
 }
 
 .search-form fieldset:nth-child(2) {
-  width: 140px;
+  width: 160px;
+  margin-right: 110px;
 }
 
 .search-form legend {
@@ -540,30 +541,140 @@ a {
 
 /* ---- */
 
+.filter-range {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 0;
+  margin-left: 213px;
+  width: 318px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.filter-range legend {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.price-controls {
+  position: relative;
+  height: 32px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  padding-top: 5px;
+  padding-left: 65px;
+  width: 90px;
+  height: 26px;
+}
+
+.price-controls .max-price {
+  margin-left: 2px;
+  padding-left: 52px;
+  width: 96px;
+}
+
+.price-controls input {
+  width: 55px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
 
 
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  width: 5px;
+  height: 5px;
+}
+
+.transparent-btn {
+  display: block;
+  margin: 0;
+  margin-left: 85px;
+  padding: 6px 35px;
+  width: 137px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.transparent-btn:hover {
+  color: #000000;
+  background: #ffffff;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Список, сортировка */
 
 
 
