@@ -28,6 +28,7 @@ a {
 
 /* Центровщик */
 .container {
+  position: relative;
   margin: 0 auto;
   width: 1200px;
   text-align: center;
@@ -425,6 +426,10 @@ a {
 
 
 /* Карта */
+.map {
+  height: 595px;
+}
+
 .map iframe {
   border: 0;
   z-index: 0;
@@ -907,43 +912,86 @@ a {
 .main-footer {
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
-
-  height: 120px;
+  height: 122px;
   background-color: #ffffff;
-  opacity: 0.9;
-
-
-
-margin-top: 10px; /* Убрать */
-
-
-  outline: 1px solid #666;
 }
 
+.footer-opacity {
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
 
+.footer-hashtag {
+  display: flex;
+  margin: 0;
+  margin-top: 46px;
+  padding: 0;
+  padding-left: 38px;
+  width: 240px;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
 
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  margin-left: -1px;
+  width: 150px;
+}
 
+.button-social {
+  display: flex;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  align-items: center;
+  background-color: #81b3d2;
+  cursor: pointer;
+}
 
+.footer-copyright {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 39px;
+  width: 240px;
+}
 
+.footer-copyright p {
+  margin-top: 7px;
+  margin-right: 8px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
 
+.copyright-link {
+  margin-right: 5px;
+}
 
+.button-social:hover {
+  background-color: #669ec0;
+}
 
+.button-social:active {
+  background-color: #5496bd;
+  fill-opacity: 0.3;
+}
 
+.copyright-link:hover path {
+  fill: #81b3d2;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.copyright-link:active path {
+  fill: #bdbbbc;
+}
 
 
 
