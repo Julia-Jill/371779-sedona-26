@@ -675,18 +675,114 @@ a {
 
 
 /* Список, сортировка */
+.sorting {
+  height: 77px;
+  border-bottom: 1px solid #e5e5e5;
+}
 
+.sorting-list {
+  display: flex;
+  align-items: baseline;
+  margin: 0;
+  margin-top: 9px;
+  padding-left: 72px;
+  padding-right: 73px;
+}
 
+.sorting-list-found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
 
+.sorting-list-selection {
+  padding-left: 48px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
 
+.sorting-list-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  padding-left: 39px;
+  width: 240px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
 
+.sorting-list-items a {
+  color: #000000;
+  opacity: 0.3;
+  border-bottom: 1px dotted #81b3d2;
+}
 
+.sorting-list-items .sorting-list-active {
+  color: #81b3d2;
+  opacity: 1.0;
+  border-bottom: none;
+}
 
+.sorting-list-items a:hover,
+.sorting-list-items a:focus {
+  color: #81b3d2;
+  opacity: 1.0;
+}
 
+.sorting-list-items a:active {
+  color: #000000;
+  border-bottom: none;
+}
 
+/* ---- */
 
+.sorting-list-buttons {
+  margin-left: auto;
+}
 
+.sorting-button-down {
+  margin-left: 8px;
+}
 
+.sorting-button-up path,
+.sorting-button-down path {
+  fill: #cacaca;
+}
+
+.sorting-button-active path {
+  fill: #81b3d2;
+}
+
+.sorting-button-up path:hover,
+.sorting-button-down path:hover {
+  fill: #231f20;
+}
+
+.sorting-button-up path:active,
+.sorting-button-down path:active {
+  fill: #81b3d2;
+}
+
+/* ---- */
+
+.hotels-list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hotel-description {
+  display: flex;
+  height: 150px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-description img {
+  margin-left: 72px;
+
+}
 
 
 
@@ -717,13 +813,14 @@ a {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+
   height: 120px;
   background-color: #ffffff;
   opacity: 0.9;
 
 
 
-
+margin-top: 10px; /* Убрать */
 
 
   outline: 1px solid #666;

@@ -22,8 +22,6 @@
         </a>
       </nav>
     </header>
-
-
     <main>
       <h1 class="visually-hidden">Поиск отелей</h1><!--Скрыть-->
       <section class="search-section">
@@ -46,7 +44,6 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset>
             <legend>Тип жилья:</legend>
             <ul class="list-decoration">
@@ -64,10 +61,9 @@
               </li>
             </ul>
           </fieldset>
-
           <div class="filter-range">
-              <legend>Стоимость в сутки (р):</legend>
-              <div class="price-controls">
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="price-controls">
                 <label class="min-price" for="first-value">от <input type="text" name="first-value" id="first-value" value="0"/></label>
                 <label class="max-price" for="last-value">до <input type="text" name="last-value" id="last-value" value="3000"/></label>
             </div>
@@ -80,47 +76,56 @@
             </div>
             <button class="transparent-btn" type="submit">Показать</button>
           </div>
-
         </form>
       </section>
-
-      <section><!--Отели-->
-        <div>
+      <section class="sorting"><!--Отели, сортировка-->
+        <div class="sorting-list">
           <h2 class="visually-hidden">Сортировка</h2><!--Скрыть-->
-          <p>Найдено: 3</p>
-          <p>Сортировка:</p>
-          <ul class="list-decoration">
-            <li><a href="#">По цене</a></li>
+          <p class="sorting-list-found">Найдено: 3</p>
+          <p class="sorting-list-selection">Сортировка:</p>
+          <ul class="list-decoration sorting-list-items">
+            <li><a class="sorting-list-active">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
           </ul>
-          <div>
-            <a href="#" aria-label="Сортировать по возрастанию" title="По возрастанию"></a><!--Стрелка вверх-->
-            <a href="#" aria-label="Сортировать по убыванию" title="По убыванию"></a><!--Стрелка вниз-->
+          <div class="sorting-list-buttons">
+            <a class="sorting-button-up" href="#" aria-label="Сортировать по возрастанию" title="По возрастанию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+            </a><!--Стрелка вверх-->
+            <a class="sorting-button-down sorting-button-active" href="#" aria-label="Сортировать по убыванию" title="По убыванию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+            </a><!--Стрелка вниз-->
           </div>
         </div>
+      </section>
 
+      <section class="hotels"><!--Отели-->
         <h2 class="visually-hidden">Список отелей</h2><!--Скрыть-->
-        <ul class="list-decoration">
-          <li>
-            <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa"/>
-            <div>
-              <h2>Amara Resort & Spa</h2>
-              <span>Гостиница</span>
-              <span>От 4000 Р.</span>
+        <ul class="list-decoration hotels-list">
 
-              <div>
+          <li class="hotel-description">
+            <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa"/>
+            <div class="hotel-description-main">
+              <h2 class="visually-hidden">Amara Resort & Spa</h2><!--Скрыть-->
+              <a class="hotel-title" href="#">Amara Resort & Spa</a>
+              <div class="hotel-text">
+                <span>Гостиница</span>
+                <span>От 4000 Р.</span>
+              </div>
+              <div class="hotel-description-btn">
                 <a href="#">Подробнее</a>
                 <a href="#">Забронировать</a>
               </div>
             </div>
+
             <div>
               <span></span><!--4 звезды-->
               <span>Рейтинг: 8,5</span>
             </div>
           </li>
 
-          <li>
+
+          <li class="hotel-description">
             <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn"/>
             <div>
               <h2>Desert Quail Inn</h2>
@@ -138,7 +143,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="hotel-description">
             <img src="img/villas-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo"/>
             <div>
               <h2>Villas at Poco Diablo</h2>
