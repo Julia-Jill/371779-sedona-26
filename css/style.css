@@ -73,6 +73,10 @@ a {
   opacity: 0.3;
 }
 
+.active-page a {
+  color: #766357;
+}
+
 .main-navigation-items {
   display: flex;
   align-items: center;
@@ -800,6 +804,15 @@ a {
   color: #000000;
 }
 
+.hotel-title:hover {
+  color: #81b3d2;
+}
+
+.hotel-title:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
 .hotel-text {
   margin-top: -8px;
   font-size: 14px;
@@ -834,50 +847,60 @@ a {
   padding-top: 3px;
   width: 110px;
   background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .button-reserve {
   padding-top: 3px;
   width: 142px;
   background-color: #766357;
+  color: #ffffff;
+}
+
+.button-more:hover {
+  background-color: #669ec0;
+}
+
+.button-more:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-reserve:hover {
+  background-color: #604e43;
+}
+
+.button-reserve:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* ---- */
 
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: -1px 72px 0 auto;
+}
 
+.rating-stars {
+  margin: 0 0 auto auto;
+}
 
+.rating-stars svg {
+  padding-left: 2px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rating p {
+  margin: 0;
+  padding: 3px 14px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #666666;
+  background-color: #f2f2f2;
+}
 
 
 /* Подвал */
