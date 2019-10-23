@@ -298,6 +298,15 @@ a {
   cursor: pointer;
 }
 
+.search-intro-btn:hover {
+  background-color: #604e43;
+}
+
+.search-intro-btn:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 /* Форма поиска*/
 .form-search {
@@ -359,6 +368,23 @@ a {
   cursor: pointer;
 }
 
+.input-calendar:hover {
+  background-color: #ebebeb;
+}
+
+.input-calendar:focus {
+  background-color: #ffffff;
+  outline: 2px solid #e5e5e5;
+}
+
+.calendar-btn:hover path {
+  fill: #000000;
+}
+
+.calendar-btn:active path {
+  fill: #81b3d2;
+}
+
 /* ---- */
 
 .input-adults-wrapper {
@@ -381,6 +407,16 @@ a {
   text-align: center;
 }
 
+.input-adults:hover,
+.input-children:hover {
+  background-color: #ebebeb;
+}
+
+.input-adults:focus,
+.input-children:focus {
+  background-color: #ffffff;
+  outline: 2px solid #e5e5e5;
+}
 
 .fields-container .minus-btn,
 .fields-container .plus-btn {
@@ -396,6 +432,16 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.minus-btn:hover,
+.plus-btn:hover {
+  color: #000000;
+}
+
+.minus-btn:active,
+.plus-btn:active {
+  color: #81b3d2;
 }
 
 .input-adults-wrapper:first-child .minus-btn {
@@ -422,6 +468,15 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #669ec0;
+}
+
+.submit-btn:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
