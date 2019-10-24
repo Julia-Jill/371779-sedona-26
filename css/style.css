@@ -971,7 +971,6 @@ a {
 /* Подвал */
 .main-footer {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   height: 122px;
   background-color: #ffffff;
@@ -987,12 +986,9 @@ a {
 
 .footer-hashtag {
   display: flex;
+  justify-content: center;
   margin: 0;
-  padding: 0;
-  padding-bottom: 5px;
-  padding-left: 38px;
-  width: 240px;
-  box-sizing: border-box;
+  width: 400px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -1001,41 +997,44 @@ a {
 
 .footer-social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: -1px;
-  width: 150px;
+  width: 400px;
 }
 
 .button-social {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-right: 6px;
   width: 46px;
   height: 48px;
-  align-items: center;
   background-color: #81b3d2;
   cursor: pointer;
 }
 
+.footer-social li:last-child a {
+  margin-right: 0;
+}
+
 .footer-copyright {
   display: flex;
-  justify-content: flex-end;
-  width: 240px;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  width: 400px;
 }
 
 .footer-copyright p {
-  margin-right: 8px;
-  padding-bottom: 5px;
+  margin-right: 6px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
 }
 
 .copyright-link {
-  align-self: center;
-  margin: 7px 5px auto 0;
+  align-self: flex-end;
 }
 
 .button-social:hover {
