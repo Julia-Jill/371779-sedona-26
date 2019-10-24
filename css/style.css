@@ -50,6 +50,7 @@ a {
 .main-header-logo {
   position: absolute;
   top: 0;
+  left: 50%;
   transform: translate(-50%);
   z-index: 1;
 }
@@ -967,6 +968,7 @@ a {
 .main-footer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 122px;
   background-color: #ffffff;
 }
@@ -982,8 +984,8 @@ a {
 .footer-hashtag {
   display: flex;
   margin: 0;
-  margin-top: 46px;
   padding: 0;
+  padding-bottom: 5px;
   padding-left: 38px;
   width: 240px;
   box-sizing: border-box;
@@ -997,7 +999,8 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 36px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: -1px;
   width: 150px;
 }
@@ -1015,20 +1018,20 @@ a {
 .footer-copyright {
   display: flex;
   justify-content: flex-end;
-  margin-top: 39px;
   width: 240px;
 }
 
 .footer-copyright p {
-  margin-top: 7px;
   margin-right: 8px;
+  padding-bottom: 5px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
 }
 
 .copyright-link {
-  margin-right: 5px;
+  align-self: center;
+  margin: 7px 5px auto 0;
 }
 
 .button-social:hover {
