@@ -112,7 +112,7 @@ a {
 
 /* Основное изображение, текст */
 .intro {
-  background-color: #ffffff;
+  background-color: #daebf3;
   background-image:
     url("../img/intro-mask.svg"),
     url("../img/background-photo.jpg");
@@ -485,6 +485,7 @@ a {
 /* Карта */
 .map {
   height: 595px;
+  background-color: #f2f1ef;
   background-image: url(../img/map.jpg);
   background-position: -40px -154px;
 }
